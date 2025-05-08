@@ -2,7 +2,7 @@
 
 const { ask } = require('../helpers/input');
 
-async function main() 
+async function main(){
   const num1 = Number(await ask('Ingresa el primer número: '));
   const num2 = Number(await ask('Ingresa el segundo número: '));
 
@@ -12,7 +12,11 @@ async function main()
   console.log('Suma:', suma);
   // TODO: Mostrar el resultado de la resta, multiplicación y división
 
-  const suma = num1 + num2;
-  console.log('Suma:', suma);
-
+  const resta = num1 - num2;
+  console.log('Suma:', resta);
+ const division = num1 % num2;
+ console.log('division:', division)
+  const multiplicacion = num1 * num2;
+  console.log('multiplicacion', multiplicacion);
+}
 main();
